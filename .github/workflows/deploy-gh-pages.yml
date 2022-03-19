@@ -1,5 +1,7 @@
 name: Deploy gh-page
 on: [push]
+  branches:
+    - master
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
