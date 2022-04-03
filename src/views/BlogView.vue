@@ -28,5 +28,7 @@ export default {
 </script>
 
 <style>
-
+  .blog-detail h1 {
+    margin-bottom: var(--normal-spacing);
+  }
 </style>

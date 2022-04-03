@@ -1,119 +1,78 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+  <div class="container">
+    <header>
+      <RouterLink to="/">
+        <div id="logo">
+          Dat Blog
+        </div>
+      </RouterLink>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
-  </header>
+    </header>
+    <RouterView />
+  </div>
 
-  <RouterView />
+  <footer>
+    <div class="container">
+      <div class="social-list">
+        <a href="https://github.com/dattran92">
+          <i class="fab fa-github fa-fw"></i>
+        </a>
+        <a href="/">
+          <i class="fab fa-linkedin fa-fw"></i>
+        </a>
+        <a href="/">
+          <i class="fab fa-stack-overflow fa-fw"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 @import '@/assets/base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+  padding: var(--normal-spacing) 0;
 }
 
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  display: flex;
+  margin-bottom: var(--large-spacing);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+#logo {
+  font-size: 3rem;
+  user-select: none;
+  margin-right: var(--large-spacing);
+  font-weight: var(--font-bold);
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  margin-right: var(--normal-spacing);
 }
 
-nav a:first-of-type {
-  border: 0;
+footer {
+  padding: var(--normal-spacing);
+  margin-top: var(--large-spacing);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-background-darker);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+footer .social-list {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+footer .social-list i {
+  font-size: var(--font-size-medium);
 }
 </style>
