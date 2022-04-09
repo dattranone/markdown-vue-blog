@@ -18,7 +18,7 @@ const blogList = require('../public/data/blog-list.json')
   const sp = new SitePrerender({
     staticPath: path.join(__dirname, '../dist'),
     outputFolder: path.join(__dirname, '../output'),
-    routes: ['/', '/about']
+    routes,
   })
 
   await sp.init()
