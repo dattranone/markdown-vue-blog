@@ -28,3 +28,4 @@ coverage
 *.sw?
 
 public/data/blog-list.json
+output

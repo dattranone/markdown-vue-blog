@@ -3,16 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:vite": "vite build",
+    "prerender": "node ./scripts/prerender.js",
+    "generate-blog-list": "node ./scripts/generate-blog-list.js",
+    "build": "npm run build:vite && npm run prerender",
     "preview": "vite preview --port 5050",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "deploy": "gh-pages -d dist",
-    "generate-blog-list": "node ./scripts/generate-blog-list.js"
+    "deploy": "gh-pages -d output"
   },
   "dependencies": {
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "markdown-it": "^12.3.2",
+    "site-prerender": "^1.0.0",
     "vue": "^3.2.31",
     "vue-markdown": "^2.2.4",
     "vue-markdown-render": "^2.0.0",
