@@ -1,6 +1,7 @@
 <script setup>
 import axios from 'axios';
-import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router';
+import { useHead } from 'unhead';
 </script>
 
 <script>
@@ -12,6 +13,9 @@ export default {
     }
   },
   async mounted() {
+    useHead({
+      title: 'Just another random developer in the world'
+    })
     const { data } = await axios('/data/blog-list.json');
     this.blogList = data;
   },

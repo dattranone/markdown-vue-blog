@@ -3,11 +3,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="container">
+  <div class="container main-app">
     <header>
       <RouterLink to="/">
         <div id="logo">
-          Dat Blog
+          Dat's Stories
         </div>
       </RouterLink>
       <nav>
@@ -41,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
 @import '@/assets/base.css';
 
 #app {
-  padding: var(--normal-spacing) 0;
+  padding: var(--normal-spacing) 0 0 0;
 }
 
 header {
@@ -75,4 +75,9 @@ footer .social-list {
 footer .social-list i {
   font-size: var(--font-size-medium);
 }
+
+.main-app {
+  min-height: calc(100vh - 125px);
+}
+
 </style>

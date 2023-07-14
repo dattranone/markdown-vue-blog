@@ -9,6 +9,8 @@
 <script setup>
 import VueMarkdown from 'vue-markdown-render';
 import axios from 'axios';
+import { useHead } from 'unhead';
+import { getBlog } from '../helpers/blog';
 </script>
 
 <script>
@@ -21,8 +23,24 @@ export default {
     }
   },
   async mounted() {
-    const { data: mdContent } = await axios(`/data/blog/${this.id}.md`);
+    const [ detail, blogListResp ] = await Promise.all([
+      axios(`/data/blog/${this.id}.md`),
+      axios('/data/blog-list.json'),
+    ]);
+    const { data: mdContent } = detail;
+    const { data: blogList } = blogListResp;
+
     this.content = mdContent;
+
+    const currentBlog = getBlog(this.id, blogList);
+    useHead({
+      title: currentBlog.title,
+      meta: [
+        { name: 'og:title', content: currentBlog.title },
+        { name: 'description', content: currentBlog.summary },
+        { name: 'og:escription', content: currentBlog.summary },
+      ],
+    });
   },
 }
 </script>
