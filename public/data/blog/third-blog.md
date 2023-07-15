@@ -10,3 +10,8 @@ Then we add a list of items:
 - second item
   - nested item
   - another nested item with **bold** formatting
+
+Tags:
+```tags
+english, demo-item
+```

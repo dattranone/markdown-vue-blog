@@ -30,3 +30,20 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Markdown format rules
+
+#### Title
+Use a `h1` tag for title
+```
+# this is the title
+```
+
+#### Tags
+to add tags to blog, use block quote which `tags` as a language.
+
+```
+```tags
+tag1, tag2, tag3
+```
+```
