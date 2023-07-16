@@ -4,7 +4,6 @@ const path = require('path')
 const SitePrerender = require('site-prerender')
 const blogList = require('../public/data/blog-list.json')
 
-
 ;(async () => {
   // TODO: configuration
   const routes = blogList.reduce((prev, curr) => {

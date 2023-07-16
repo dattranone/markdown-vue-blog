@@ -56,3 +56,8 @@ a {
   margin: 0 auto;
   padding: 0 var(--normal-spacing);
 }
+
+h1 {
+  margin-bottom: var(--large-spacing);
+  line-height: 1.3em;
+}
