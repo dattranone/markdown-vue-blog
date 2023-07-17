@@ -3,16 +3,23 @@
 const path = require('path')
 const SitePrerender = require('site-prerender')
 const blogList = require('../public/data/blog-list.json')
+const tagList = require('../public/data/tag-list.json')
 
 ;(async () => {
   // TODO: configuration
-  const routes = blogList.reduce((prev, curr) => {
-    prev.push(`/blog/${curr.id}`)
-    return prev
-  }, [
+  const defaultRoutes = [
     '/',
     '/about'
-  ])
+  ]
+  const blogListRoutes = blogList.map(item => `/blog/${item.id}`)
+  const tagListRoutes = Object.keys(tagList).map(item => `/tag/${item}`)
+
+  const routes = [
+    ...defaultRoutes,
+    ...blogListRoutes,
+    ...tagListRoutes,
+  ]
+  
 
   const sp = new SitePrerender({
     staticPath: path.join(__dirname, '../dist'),
