@@ -40,7 +40,7 @@ Use a `h1` tag for title
 ```
 
 #### Tags
-to add tags to blog, use block quote which `tags` as a language.
+to add tags to blog, use block quote with `tags` as a language.
 
 ```
 ```tags
