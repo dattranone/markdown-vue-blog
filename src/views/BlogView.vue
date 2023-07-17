@@ -1,16 +1,38 @@
 <template>
   <div class="blog-detail">
     <div class="blog-content">
-      <vue-markdown :source="content" />
+      <vue-markdown :source="content" :options="mdOptions" />
     </div>
   </div>
 </template>
 
 <script setup>
-import VueMarkdown from 'vue-markdown-render';
 import axios from 'axios';
 import { useHead } from 'unhead';
+import VueMarkdown from 'vue-markdown-render';
+
 import { getBlog } from '../helpers/blog';
+
+const mdOptions = {
+  highlight: function(str, lang) {
+    // fix tags
+    if (lang === 'tags') {
+      try {
+        const tagList = str
+          .split(',')
+          .map((item) => item.trim())
+          .filter((item) => !!item)
+          .map((item) => `<a href="/tag/${item}">${item}</a>`)
+      
+        return tagList.join(' ')
+      } catch (error) {
+        return str
+      }
+    } 
+
+    return str;
+  }
+}
 </script>
 
 <script>
@@ -45,3 +67,14 @@ export default {
 }
 </script>
 
+<style>
+.language-tags {
+  display: block;
+  margin-top: var(--normal-spacing);
+}
+.language-tags a {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+</style>
