@@ -27,6 +27,6 @@ export default {
 </script>
 
 <template>
-  <h1>Tag {{this.id}}:</h1>
+  <h1>Tag {{id}}:</h1>
   <blog-list :list="tagList"></blog-list>
 </template>
