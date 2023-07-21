@@ -80,6 +80,7 @@ export default {
 
 .blog-content img {
   margin: var(--normal-spacing) auto;
+  max-width: 100%;
 }
 
 .blog-content blockquote {
