@@ -93,4 +93,12 @@ export default {
   font-weight: var(--font-bold);
 }
 
+.blog-content li {
+  margin: var(--small-spacing) 0;
+}
+
+.blog-content p {
+  margin-bottom: var(--small-spacing);
+}
+
 </style>
