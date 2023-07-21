@@ -60,7 +60,7 @@ export default {
       meta: [
         { name: 'og:title', content: currentBlog.title },
         { name: 'description', content: currentBlog.summary },
-        { name: 'og:escription', content: currentBlog.summary },
+        { name: 'og:description', content: currentBlog.summary },
       ],
     });
   },
