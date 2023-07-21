@@ -23,12 +23,12 @@ const mdOptions = {
           .map((item) => item.trim())
           .filter((item) => !!item)
           .map((item) => `<a href="/tag/${item}">${item}</a>`)
-      
+
         return tagList.join(' ')
       } catch (error) {
         return str
       }
-    } 
+    }
 
     return str;
   }
@@ -77,4 +77,20 @@ export default {
   border-radius: 3px;
   padding: 3px 8px;
 }
+
+.blog-content img {
+  margin: var(--normal-spacing) auto;
+}
+
+.blog-content blockquote {
+  border-left: 3px solid var(--color-border);
+  margin: var(--normal-spacing) 0;
+  padding-left: var(--normal-spacing);
+}
+
+.blog-content h3 {
+  margin: var(--normal-spacing) 0;
+  font-weight: var(--font-bold);
+}
+
 </style>

@@ -1,6 +1,8 @@
-﻿# Những kỹ năng cần thiết để trở thành 1 lập trình viên giỏi
+# Những kỹ năng cần thiết để  trở thành 1 lập trình viên giỏi
 
 > Hôm nay rảnh rỗi ngồi nói chuyện với chatGPT, mình hỏi thử xem làm thế nào để trở thành 1 lập trình viên giỏi, thì được nó list ra nguyên 1 checklist  như này:
+
+![ltv gioi chatGPT](/content/images/ltv-gioi-chatgpt.png)
 
 > Cái list này đọc sơ qua thì cũng không có gì sai, nhưng nếu suy nghĩ kĩ thì mình thấy thật ra nó chỉ trả lời câu hỏi làm sao để trở thành LTV, chứ k phải là 1 LTV giỏi. Mình nghĩ rằng bất cứ LTV nào cũng sẽ follow hết nguyên cái checklist này, và ít nhiều để nắm được những vấn đề trên. Nhưng sao lại có người giỏi, có người dở? Mấu chốt nằm ở đâu? Theo mình, thì những kĩ năng sau đây mới chính là điểm tạo ra sự khác biệt.
 
@@ -10,7 +12,7 @@ Mình bắt đầu làm quen với lập trình từ hồi cấp 2, năm lớp 7
 
 ### 2. Kĩ năng tiếng anh
 
-Ở cái thời của mình, tiếng anh chưa được các bạn học công nghệ quan tâm một cách đầy đủ. Dẫn đến trường hợp rất nhiều bạn có kĩ năng lập trình tốt bị mất đi nhiều cơ hội. Khi bạn có khả năng giao tiếp tiếng anh tốt, bạn đã mở rộng được cơ hội nghề nghiệp của mình lên rất nhiều lần. Vì hiện tại có rất nhiều công ty nước ngoài tuyển dụng nhân sự trong mảng công nghệ. Thậm chí bạn có thể tự ứng tuyển một công ty ở nước ngoài và làm việc remote với một mức lương hoàn toàn tốt. Hiện tại, tiếng anh đã được quan tâm nhiều hơn. Nhưng không hiểu sao nhiều bạn trẻ xung quanh mình, đặc biệt là các bạn ở tỉnh vẫn không có đủ kĩ năng cần thiết sau khi ra trường để có thể có được một công việc tốt hơn. 
+Ở cái thời của mình, tiếng anh chưa được các bạn học công nghệ quan tâm một cách đầy đủ. Dẫn đến trường hợp rất nhiều bạn có kĩ năng lập trình tốt bị mất đi nhiều cơ hội. Khi bạn có khả năng giao tiếp tiếng anh tốt, bạn đã mở rộng được cơ hội nghề nghiệp của mình lên rất nhiều lần. Vì hiện tại có rất nhiều công ty nước ngoài tuyển dụng nhân sự trong mảng công nghệ. Thậm chí bạn có thể tự ứng tuyển một công ty ở nước ngoài và làm việc remote với một mức lương hoàn toàn tốt. Hiện tại, tiếng anh đã được quan tâm nhiều hơn. Nhưng không hiểu sao nhiều bạn trẻ xung quanh mình, đặc biệt là các bạn ở tỉnh vẫn không có đủ kĩ năng cần thiết sau khi ra trường để có thể có được một công việc tốt hơn.
 
 Hơn nữa, như đã nói ở trên, kĩ năng tự học là rất quan trọng. Vậy thì để có thể tự học, kĩ năng tiếng anh là không thể thiếu. Mình từng hướng dẫn một bạn fresher, khi đưa tài liệu bằng tiếng anh. Thậm chí một câu đơn giản mà bạn ấy còn không thể hiểu chính xác, thì làm sao có thể hiểu rõ được hết vấn đề, ứng dụng, điểm tích cực và hạn chế của một công nghệ.
 
@@ -26,5 +28,5 @@ Hơn nữa, như đã nói ở trên, kĩ năng tự học là rất quan trọn
 
 Tags:
 ```tags
-vietnamese, developer 
+vietnamese, developer
 ```

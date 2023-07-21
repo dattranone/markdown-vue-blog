@@ -59,6 +59,7 @@ const getTags = ($) => {
     const $ = cheerio.load(parsedResult);
 
     const title = getTitle($);
+    console.log('check', parsedResult);
     const summary = getSummary($);
     const tags = getTags($);
 
