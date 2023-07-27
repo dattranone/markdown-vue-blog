@@ -21,7 +21,8 @@
     "vue": "^3.2.31",
     "vue-markdown": "^2.2.4",
     "vue-markdown-render": "^2.0.0",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vuewordcloud": "^19.0.0"
   },
   "devDependencies": {
     "@unhead/addons": "^1.1.30",
