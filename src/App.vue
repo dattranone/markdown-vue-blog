@@ -36,7 +36,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 @import '@/assets/base.css';
 

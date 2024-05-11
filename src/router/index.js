@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
+      path: '/cute-bunny-privacy',
+      name: 'Cute Bunny Privacy',
+      component: () => import('../views/CuteBunnyPrivacy.vue')
+    },
+    {
       path: '/blog/:id',
       name: 'blog',
       component: () => import('../views/BlogView.vue')
