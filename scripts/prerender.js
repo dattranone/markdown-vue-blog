@@ -9,7 +9,8 @@ const tagList = require('../public/data/tag-list.json')
   // TODO: configuration
   const defaultRoutes = [
     '/',
-    '/about'
+    '/about',
+    '/cute-bunny-privacy'
   ]
   const blogListRoutes = blogList.map(item => `/blog/${item.id}`)
   const tagListRoutes = Object.keys(tagList).map(item => `/tag/${item}`)
@@ -19,7 +20,7 @@ const tagList = require('../public/data/tag-list.json')
     ...blogListRoutes,
     ...tagListRoutes,
   ]
-  
+
 
   const sp = new SitePrerender({
     staticPath: path.join(__dirname, '../dist'),
