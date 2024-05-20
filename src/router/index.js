@@ -15,7 +15,7 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/cute-bunny-privacy',
+      path: '/app-cute-bunny-privacy',
       name: 'Cute Bunny Privacy',
       component: () => import('../views/CuteBunnyPrivacy.vue')
     },
